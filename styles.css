@@ -1,0 +1,93 @@
+body {
+  height: 100%;
+}
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 20px;
+  padding: 15px;
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/08/mahogany-brazil-1000x500.jpg);
+  border-radius: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px;
+  border: 1px solid black;
+  box-shadow: inset 0px 5px 10px;
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/08/pau-ferro-980x490.jpg);
+  padding: 2px;
+}
+
+.grid button {
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/06/berlinia2.jpg);
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.cell {
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/06/berlinia2.jpg);
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.cell:nth-child(-n + 4) {
+  box-shadow: 1px 12px 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.cell:nth-child(4n-3) {
+  box-shadow: 12px 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+.cell:nth-child(1) {
+  box-shadow: 12px 12px 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.lastcell {
+  background: transparent;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer button {
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  width: 80px;
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/06/berlinia2.jpg);
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+}
+.footer button:hover {
+  color: black;
+}
+
+.footer span {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  margin: auto 0;
+}
+
+.message {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+}
